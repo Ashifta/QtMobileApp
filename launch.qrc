@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>launch/qtlabscontrols.conf</file>   
+        <file>launch/launchscreen.qml</file>     
+        <file>main.qml</file>
+    </qresource>
+</RCC>

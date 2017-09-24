@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+ <file>res/drawable-xxxhdpi/login_background.png</file>
+ <file>res/drawable-xxxhdpi/nav_drawer_icon.png</file>
+
+ <file>res/drawable-xxhdpi/login_background.png</file>
+ <file>res/drawable-xxhdpi/nav_drawer_icon.png</file>
+
+ <file>res/drawable-xhdpi/login_background.png</file>
+ <file>res/drawable-xhdpi/nav_drawer_icon.png</file>
+
+ <file>res/drawable-hdpi/login_background.png</file>
+ <file>res/drawable-hdpi/nav_drawer_icon.png</file>
+ 
+ <file>res/drawable-mdpi/login_background.png</file>
+ <file>res/drawable-mdpi/nav_drawer_icon.png</file>
+ 
+   </qresource>
+</RCC>

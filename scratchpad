@@ -1,0 +1,61 @@
+drawable-xxxhdpi:128
+drawable-xxhdpi:96
+drawable-xhdpi:64
+drawable-hdpi:48
+drawable-mdpi:32
+
+
+  protected JSONObject doInBackground(Void... param) {
+
+            jsonParser = new JsonParser();
+
+            HashMap<String, String> params = new HashMap<>();
+            params.put("appkey", GetEncrypt.md5Encrypt());
+            params.put("username", username);
+            params.put("password", password);
+            params.put("acc_type", login_type);
+
+            JSONObject json = jsonParser.makeHttpRequest(Constants.BASE_URL + "login", "POST", params);
+            return json;
+        }
+
+ if (count($user_id) > 0) {
+                    if (trim($user_id['verified']) == 0) {
+                        $return = array(
+                            'status' => FALSE,
+                            'data' => array('user_status' => 'not_verified', 'user_id' => $user_id['id']),
+                            'message' => 'User account not verified yet!'
+                        );
+                        echo json_encode($return);
+                        die();
+                    } else if (trim($user_id['status']) == 'no') {
+                        $support_no = $this->Api_model->get_support_nos();
+
+                        $return = array(
+                            'status' => FALSE,
+                            'data' => array('user_status' => 'blocked', 'support_no' => $support_no),
+                            'message' => 'User archieved by Admin!'
+                        );
+                        echo json_encode($return);
+                        die();
+                    } else {
+                        $passenger_details = $this->Api_model->get_passenger_details($user_id['id']);
+
+                        $return = array(
+                            'status' => TRUE,
+                            'data' => (array) $passenger_details,
+                            'message' => 'Login Success!'
+                        );
+                        echo json_encode($return);
+                        die();
+                    }
+                } else {
+                    $return = array(
+                        'status' => FALSE,
+                        'data' => array('user_status' => 'active'),
+                        'message' => 'Username or Password Incorrect!'
+                    );
+                    echo json_encode($return);
+                    die();
+                }
+            }

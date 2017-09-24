@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+    <file>controls/MyButton.qml</file>
+    <file>controls/ConfirmationMessage.qml</file>
+    <file>controls/MyTextField.qml</file>
+    <file>controls/MyIconRow.qml</file>
+   <file>controls/ProgressCircle.qml</file>
+    </qresource>
+</RCC>

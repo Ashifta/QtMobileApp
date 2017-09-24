@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Kunjumma</h1>
+</body>
+</html>
+
+
+
+<!--body,html,#map_canvas{height:100%;margin:0;}
+#map_canvas .centerMarker{
+  position:absolute;
+  /*url of the marker*/
+  background:url(http://maps.gstatic.com/mapfiles/markers2/marker.png) no-repeat;
+  /*center the marker*/
+  top:50%;left:50%;
+  z-index:1;
+  /*fix offset when needed*/
+  margin-left:-10px;
+  margin-top:-34px;
+  /*size of the image*/
+  height:34px;
+  width:20px;
+  cursor:pointer;
+}
+function initialize() {
+      var mapOptions = {
+        zoom: 14,
+        center: new google.maps.LatLng(52.5498783, 13.425209099999961),
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      map = new google.maps.Map(document.getElementById('map_canvas'),
+          mapOptions);
+      $('<div/>').addClass('centerMarker').appendTo(map.getDiv())
+           //do something onclick
+          .click(function(){
+             var that=$(this);
+             if(!that.data('win')){
+              that.data('win',new google.maps.InfoWindow({content:'this is the center'}));
+              that.data('win').bindTo('position',map,'center');
+             }
+             that.data('win').open(map);
+          });
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);-->

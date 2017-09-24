@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+    <file>res/drawable/user.png</file>
+    <file>res/drawable/google_logo.png</file>
+    <file>res/drawable/fb_icon.png</file>
+    <file>res/drawable/pass.png</file>
+    <file>res/drawable/home.png</file>
+    <file>res/drawable/bg_pin.png</file>
+    <file>res/drawable/car_front_icon.png</file>
+    <file>res/drawable/support_man.png</file>
+    <file>res/drawable/car_icon.png</file>
+    </qresource>
+</RCC>

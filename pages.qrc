@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+    <file>pages/loginform.qml</file>
+    <file>pages/login.qml</file>
+    <file>pages/signup.qml</file>
+    <file>pages/utils.js</file>
+    <file>pages/placesmap.html</file>
+    <file>pages/mapview.qml</file>
+    <file>pages/index.html</file>
+    <file>pages/validateotp.qml</file>
+    <file>pages/forgetpassword.qml</file>
+    </qresource>
+</RCC>
